@@ -1,0 +1,98 @@
+:host {
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.summary {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.task-form {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background: #f7fbff;
+}
+
+.task-form label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.task-form button {
+  width: fit-content;
+  background: #0b5cab;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tasks ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tasks li {
+  border: 1px solid #d0d7de;
+  border-left-width: 6px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.task-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.75rem;
+}
+
+.description,
+.meta {
+  margin: 0.35rem 0 0;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
